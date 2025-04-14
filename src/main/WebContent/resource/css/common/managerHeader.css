@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* 기본 헤더 스타일 */
+.admin-header .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 헤더 그림자 효과 */
+    padding: 10px 20px;
+    z-index: 10;
+    position: sticky; /* 스크롤 시 상단 고정 */
+    top: 0;
+    background-color: #343a40; /* 배경색 */
+}
+
+/* 헤더 컨텐츠를 왼쪽 정렬 */
+.admin-header .navbar .container-fluid {
+    display: flex;
+    justify-content: flex-start; /* 컨텐츠를 왼쪽 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+
+/* 로고 스타일 */
+.admin-header .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    margin-right: 30px; /* 오른쪽 여백 추가 */
+}
+
+/* 네비게이션 링크 스타일 */
+.admin-header .nav-link {
+    font-size: 1rem;
+    color: #ffffff !important;
+    margin-right: 15px; /* 링크 간격 추가 */
+    transition: color 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.admin-header .nav-link:hover {
+    color: #adb5bd; /* Hover 시 색상 */
+    text-decoration: underline;
+}
+
+/* 모바일 환경에서 햄버거 메뉴 아이콘 스타일 */
+.admin-header .navbar-toggler {
+    border: none;
+}
+
+.admin-header .navbar-toggler-icon {
+    filter: invert(100%); /* 아이콘 색상을 흰색으로 변경 */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 991.98px) {
+    .admin-header .navbar .container-fluid {
+        justify-content: space-between; /* 모바일에서는 양 끝 정렬 */
+    }
+
+    .admin-header .navbar-nav {
+        text-align: left; /* 모바일에서 왼쪽 정렬 */
+    }
+
+    .admin-header .nav-link {
+        margin-right: 0; /* 모바일에서 링크 간격 제거 */
+    }
+}

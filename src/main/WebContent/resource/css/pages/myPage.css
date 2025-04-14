@@ -1,0 +1,57 @@
+/* 기본 설정 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* 배경 색상 */
+    color: #333; /* 기본 텍스트 색상 */
+}
+
+/* 좌측 네비게이션 여백 고려 */
+main {
+    padding: 20px;
+}
+
+/* 마이프로필 섹션 스타일 */
+#MypageBody {
+    max-width: 800px; /* 최대 너비 */
+    margin: 100px auto; /* 화면 가운데 정렬 (상단 여백 포함) */
+    padding: 20px; /* 내부 여백 */
+    background-color: #ffffff; /* 배경 색상 */
+    border: 1px solid #ddd; /* 경계선 */
+    border-radius: 10px; /* 둥근 모서리 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+/* 제목 스타일 */
+#MypageBody h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444; /* 제목 색상 */
+}
+
+/* 문단 스타일 */
+#MypageBody p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #666; /* 문단 색상 */
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #666;
+}

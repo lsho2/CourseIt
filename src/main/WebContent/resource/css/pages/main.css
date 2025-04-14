@@ -1,0 +1,296 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* 좌우 스크롤 제거 */
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    width: 15vw; /* 너비 설정 */
+    min-width: 220px; /* 최소 너비 */
+    max-width: 320px; /* 최대 너비 */
+    position: fixed;
+    left: 0; /* 화면 왼쪽에 고정 */
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#head ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+
+#head ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#head ul li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+#head ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+#main {
+    margin-left: 15vw; /* 사이드바 고정 너비만큼 여백 추가 */
+    padding: 20px;
+}
+
+
+
+
+
+
+
+#daylog {
+    margin: 80px 2px;
+}
+
+.daylog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.daylog-header h2 {
+    font-size: 2em;
+    margin: 0 48px;
+}
+
+/* 전체보기 css */
+.view-all {
+    font-size: 1em;
+    text-decoration: none;
+    color: #424755;
+}
+
+.daylog-slider {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 40px;
+}
+
+.daylog-posts {
+    display: flex;
+    margin: 40px;
+    gap: 40px;
+    transition: transform 0.3s ease;
+}
+
+.post {
+    position: relative; /* 텍스트 위치를 조정하기 위해 필요한 설정 */
+    width: 210px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.5); /* 텍스트 가독성을 높이기 위한 반투명 배경 */
+    padding: 5px 10px;
+}
+
+
+
+#right-button {
+    position: absolute;
+    top: 50%;  /* 중앙에 위치하도록 설정 */
+    right: 2%; /* 화면의 오른쪽 끝에 가깝게 배치 */
+    /*transform: translateY(-50%);*/ /* 버튼을 정확히 수직 중앙으로 이동 */
+    background-color: rgba(66, 71, 85, 0.5); /* 가독성을 위한 반투명 배경 */
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+
+#left-button {
+    position: absolute;
+    top: 50%;
+    left: 2%; /* 화면의 왼쪽 끝에 가깝게 배치 */
+    /*transform: translateY(-50%);*/ 
+    background-color: rgba(66, 71, 85, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+
+
+
+
+#perform-promotion {
+	display: flex; /* exhibition-info와 promotion 섹션을 좌우로 배치 */
+    gap: 20px; /* 섹션 간의 간격 */
+    padding: 20px;
+    align-items: flex-start; /* 내용이 위쪽에 맞춰지도록 설정 */
+}
+
+
+
+
+
+#exhibition-info {
+    margin: 40px 20px; /* 섹션 상하 여백 설정 */
+    padding: 20px; /* 섹션 내부 여백 설정 */
+    width: 60%;
+    
+}
+
+.exhibition-header {
+    display: flex; /* 제목과 '전체보기' 링크를 한 줄에 배치 */
+    justify-content: space-between; /* 제목과 '전체보기' 링크를 좌우 끝에 배치 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-bottom: 20px; /* 제목과 전시 그리드 사이의 여백 */
+}
+
+.exhibition-header h2 {
+    font-size: 2em; /* 제목의 글꼴 크기 */
+    margin: 0 12px; /* 기본 상하 여백 제거 */
+}
+
+.exhibition-grid {
+    display: grid; /* 그리드 레이아웃을 사용하여 전시 정보 배치 */
+    grid-template-columns: repeat(2, 1fr); /* 2열 그리드 설정 */
+    gap: 20px; /* 그리드 아이템 사이의 간격 */
+   	margin: 20px 20px;
+}
+
+.exhibition-item {
+    border-radius: 10px; /* 각 전시 아이템에 둥근 모서리 설정 */
+    overflow: hidden; /* 아이템 크기에서 벗어나는 콘텐츠를 숨김 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과로 입체감 부여 */
+    transition: transform 0.2s; /* 호버 시 확대 효과를 부드럽게 처리 */
+}
+
+.exhibition-item:hover {
+    transform: scale(1.05); /* 호버 시 살짝 확대되는 효과 */
+}
+
+.exhibition-item img {
+    width: 100%; /* 이미지가 아이템 너비에 맞게 조정됨 */
+    height: 200px; /* 이미지 높이 고정 */
+    object-fit: cover; /* 이미지가 영역을 꽉 채우도록 설정 */
+}
+
+.exhibition-info {
+    padding: 15px; /* 전시 정보 텍스트의 내부 여백 */
+}
+
+.type {
+    color: #73179B; /* 전시 종류의 글자 색상 */
+    font-weight: bold; /* 전시 종류 글자 굵게 */
+    font-size: 0.9em; /* 전시 종류 글자 크기 */
+}
+
+.title {
+    font-size: 1.2em; /* 전시 제목 글자 크기 */
+    margin: 5px 0; /* 상하 여백 */
+}
+
+.schedule, .location {
+    font-size: 0.9em; /* 일정과 장소의 글자 크기 */
+    color: #666; /* 일정과 장소의 글자 색상 */
+}
+
+
+.exhibition-item a {
+    text-decoration: none; /* 모든 전시 아이템의 링크 밑줄 제거 */
+    color: inherit; /* 부모 요소의 색상을 따라감 */
+}
+
+
+
+
+
+
+#promotion {
+    margin: 60px 12px; /* 섹션 상하 여백 설정 */
+    width: 30%;
+}
+
+.promo-box {
+	width: 200px;
+    background-color: #9EB8BA; /* 프로모션 배경색 */
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #424755;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+footer p{
+	padding-right: 50px;
+}
+
+#logo img {
+    width: 180px;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}

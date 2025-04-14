@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    width: 15vw;
+    min-width: 220px;
+    max-width: 320px;
+    position: fixed;
+    left: 0;
+}
+
+#logo img {
+    width: 180px;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+
+
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#head ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+
+#head ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+#head ul li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+#head ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+
+#user-menu {
+    position: absolute; /* 헤더 내에서 절대 위치 */
+    top: 20px; /* 상단에서 20px 아래로 */
+    right: 20px; /* 오른쪽에서 20px 안쪽으로 */
+    font-size: 1em; /* 텍스트 크기 */
+    color: white; /* 글자 색상 */
+    display: flex; /* 항목을 가로로 나열 */
+    gap: 10px; /* 링크 사이의 간격 */
+}
+
+#user-menu a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: white; /* 링크 색상 */
+    padding: 5px 10px; /* 링크 주변에 여백 */
+    border-radius: 4px; /* 링크의 모서리를 둥글게 */
+    background-color: rgba(255, 255, 255, 0.2); /* 약간의 투명 배경 */
+    transition: background-color 0.3s ease; /* 호버 시 부드러운 전환 효과 */
+}
+
+#user-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* 호버 시 배경색 변경 */
+}

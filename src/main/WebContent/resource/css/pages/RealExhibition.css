@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+
+
+.exhibition-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    margin-left: 20vw; /* 사이드바 고정 너비만큼 여백 추가 */
+    padding: 20px;
+}
+
+.exhibition-header {
+            text-align: center;
+            margin: 30px auto;
+            margin-top: 15vh;
+            margin-bottom: 10vh;
+            margin-left: 20vw; /* 사이드바 고정 너비만큼 여백 추가 */
+            font-size: 2rem;
+            color: #333;
+        }
+
+.exhibition-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.exhibition-item:hover {
+    transform: translateY(-10px);
+}
+
+.exhibition-item img {
+    width: 100%;
+    height: auto;
+}
+
+.exhibition-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the text color from parent */
+}
+
+.exhibition-info {
+    padding: 15px;
+}
+
+.exhibition-info h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #444;
+}
+
+.exhibition-info p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* 찜 버튼 스타일 */
+.favorite-btn {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 10px 0;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+

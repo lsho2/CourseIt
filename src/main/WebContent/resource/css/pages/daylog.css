@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* 전체 페이지 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.travel{
+    margin-left: 15vw;
+}
+
+
+/* 테이블 컨테이너 스타일 */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #000000;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 70%;
+    margin: 20px auto;
+    margin-left: 25vw;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 테이블 헤더 스타일 */
+table thead tr {
+    background-color: #9d9d9d;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+/* 테이블 내용 스타일 */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 이미지 스타일 */
+table td img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

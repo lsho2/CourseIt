@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#map {
+    width: calc(90% - 20vw); /* 사이드바 제외하고 전체 너비의 80%만 차지 */
+    height: 90vh; /* 화면 높이의 90%만 사용 */
+    margin: 20px auto; /* 가운데 정렬 및 여백 추가 */
+    margin-left: 22vw; /* 사이드바를 고려한 여백 */
+    border: 1px solid #ddd; /* 경계선 추가 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.retry-button {
+    position: absolute;
+    top: 30px; /* 지도 위로부터 약간 아래로 조정 */
+    left: calc(22vw + 20px); /* 사이드바를 고려해 위치 조정 */
+    z-index: 2;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* 버튼 텍스트 크기 */
+}
+
+.retry-button:hover {
+    background-color: #218838;
+}
+
+/* 오버레이 스타일 */
+.custom-overlay {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-overlay h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #007bff;
+}
+
+.custom-overlay p {
+    font-size: 12px;
+    margin: 4px 0 0;
+    color: #555;
+}
+
+
+/* 지도 위 오버레이 텍스트 가독성 강화 */
+.custom-overlay:hover {
+    transform: scale(1.1); /* 확대 효과 */
+    transition: transform 0.2s ease-in-out; /* 애니메이션 */
+    color: #000; /* 호버 시 텍스트 색상 변경 */
+}
+
+/* 중간 지점 오버레이 */
+.midpoint-overlay {
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}

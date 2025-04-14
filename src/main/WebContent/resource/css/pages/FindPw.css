@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #afafaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+}
+
+/* 컨테이너 스타일 */
+.pw-container {
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* 로고 스타일 */
+#logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* 라인 스타일 */
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* 폼 그룹 */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #999;
+    outline: none;
+}
+
+/* 중복 확인 버튼 */
+.check-btn {
+    position: absolute;
+    right: 0;
+    top: 28.5px;
+    background-color: #917d81;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.check-btn:hover {
+    background-color: #6d6163;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #606060;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1d1d1d;
+}
+

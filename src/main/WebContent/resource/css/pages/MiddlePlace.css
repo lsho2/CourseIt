@@ -1,0 +1,142 @@
+/* 기본 설정 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+h4{
+	color: #846a79;
+}
+
+/* 메인 컨테이너 */
+.container {
+    margin-left: 15vw; /* 사이드바를 고려한 여백 */
+    padding: 20px;
+    max-width: calc(100% - 15vw); /* 남은 화면을 사용 */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 제목 */
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 친구 목록 */
+#dbMembersList {
+    display: flex;
+    flex-wrap: wrap; /* 한 줄에 요소가 넘치면 다음 줄로 넘어감 */
+    gap: 15px; /* 카드 간의 간격 */
+    justify-content: center; /* 중앙 정렬 */
+    padding: 0;
+    list-style: none; /* 리스트 스타일 제거 */
+    margin: 0 auto; /* 화면 가운데 정렬 */
+}
+
+/* 친구 카드 */
+.collection-item {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc((100% - 60px) / 3); /* 한 줄에 3개 배치 (여백 포함) */
+    max-width: 300px; /* 최대 카드 너비 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.collection-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 카드 제목 */
+.collection-item h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #444;
+}
+
+/* 카드 세부정보 */
+.collection-item p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+    background-color: #a4a9b7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #5e6577;
+}
+
+/* 버튼 그룹 */
+.btn-group {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+/* 추가 버튼 */
+.btn-add {
+    background-color:#82778e;
+    color: #fff;
+}
+
+.btn-add:hover {
+    background-color: #5b5465;
+}
+
+/* 중간 지점 찾기 버튼 */
+.btn-find {
+    background-color: #86926d;
+    color: #fff;
+}
+
+.btn-find:hover {
+    background-color: #4a513c;
+}
+
+.middleplace-image {
+    display: block;
+    max-width: 100%; /* 부모 컨테이너 너비에 맞게 조정 */
+    width: 300px; /* 기본 너비 */
+    height: auto; /* 비율 유지 */
+    margin: 20px auto; /* 중앙 정렬 */
+    border-radius: 10px; /* 이미지 둥근 모서리 효과 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+    transition: transform 0.3s ease; /* 마우스 오버 시 효과 */
+}
